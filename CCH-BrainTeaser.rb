@@ -2,33 +2,32 @@ def magic()
 
 require 'pry'
 require 'numbers_to_words'
-require 'sounder'
 
 continue = true
 
-while continue
+	while continue
 
-	good_num = false
+		good_num = false
 
-	while !good_num
+		while !good_num
 
-		puts "Input any positive number or type quit:"
-		num = gets.strip
-		if num.downcase == 'quit'
-			good_num = true
-			continue = false
-		elsif (num == nil)
-			puts "Not a valid number. Enter another."
-		else
-			good_num = true
-			num = num.to_i
-			wrd = num.to_word
+			puts "Input any positive number or type quit:"
+			num = gets.strip
+			if num.downcase == 'quit'
+				good_num = true
+				continue = false
+			elsif (num == nil)
+				puts "Not a valid number. Enter another."
+			else
+				good_num = true
+				num = num.to_i
+				wrd = num.to_word
+			end
 		end
+
+		do_magic(num, wrd)
+
 	end
-
-	do_magic(num, wrd)
-
-end
 end
 
 def do_magic(n, w)
