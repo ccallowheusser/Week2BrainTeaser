@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.1.1)
+    method_source (0.8.2)
+    numbers_to_words (0.1.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    slop (3.6.0)
+    sounder (1.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  numbers_to_words
+  pry
+  sounder
+
+BUNDLED WITH
+   1.15.0
